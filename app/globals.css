@@ -295,3 +295,24 @@ ul li a:hover {
   font-size: 14px;
   color: #777;
 }
+
+
+
+
+/* Section headings */
+h2 {
+  font-size: 28px;
+  color: #1a7f37;
+  margin: 35px 0 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8f5e9;
+  font-weight: 700;
+}
+
+
+h3 {
+  font-size: 22px;
+  color: #1a7f37;
+  margin: 15px 0 10px;
+  font-weight: 600;
+}
