@@ -316,3 +316,12 @@ h3 {
   margin: 15px 0 10px;
   font-weight: 600;
 }
+
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo h2 {
+  margin: 0;
+}
