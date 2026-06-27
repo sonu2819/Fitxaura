@@ -325,3 +325,66 @@ h3 {
 .logo h2 {
   margin: 0;
 }
+
+
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 25px;
+}
+
+.email-icon {
+  font-size: 22px;
+}
+
+.email-link {
+  color: #333;              /* Normal text color */
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #1a7f37;           /* Your site's green */
+  text-decoration: underline;
+}
+
+.email-link:visited {
+  color: #333;              /* Prevent purple visited color */
+}
+
+@media (max-width: 768px) {
+  .email-link {
+    font-size: 16px;
+  }
+
+  .email-icon {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.contact-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.contact-list li {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 8px 0;
+  display: list-item;
+}
