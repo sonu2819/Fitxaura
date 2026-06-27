@@ -1,60 +1,96 @@
-/* Basic reset */
+/* =========================
+   RESET
+========================= */
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f5f7fb;
   color: #111;
+  line-height: 1.6;
 }
 
-/* Container */
+/* =========================
+   CONTAINER
+========================= */
+
 .container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
-/* Headings */
+/* =========================
+   TYPOGRAPHY
+========================= */
+
 h1 {
-  font-size: 36px;
-  color: green;
+  font-size: 38px;
+  color: #1a7f37;
+  margin-bottom: 12px;
 }
 
-/* Lists (card style) */
+h2 {
+  color: #222;
+  margin: 20px 0;
+}
+
+p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   LISTS
+========================= */
+
 ul {
   list-style: none;
-  padding: 0;
 }
 
 li {
   background: white;
-  padding: 14px;
+  padding: 15px;
   margin: 10px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.06);
 }
 
+ul li a {
+  text-decoration: none;
+  color: #111;
+  display: block;
+}
 
+ul li a:hover {
+  color: #1a7f37;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 18px 20px;
   background: white;
-  border-bottom: 1px solid #ddd;
-  position: relative;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar h2 {
-  color: green;
-  margin: 0;
+  color: #1a7f37;
 }
 
-/* hamburger */
 .hamburger {
   font-size: 28px;
   background: none;
@@ -62,27 +98,200 @@ li {
   cursor: pointer;
 }
 
-/* dropdown menu */
+/* Dropdown */
+
 .links {
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 0;
   width: 100%;
   background: white;
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  z-index: 999;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
 }
 
 .links a {
-  padding: 12px 0;
+  padding: 15px 20px;
   text-decoration: none;
-  color: black;
+  color: #111;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .links a:hover {
-  color: green;
+  background: #f5f5f5;
+  color: #1a7f37;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #1a7f37;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* for mobile */
+@media (max-width:768px){
+
+  .hero{
+    padding:35px 15px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+}
+/* =========================
+   HOME PAGE CARDS
+========================= */
+
+.home-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #111;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.card-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  background: white;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  color: #1a7f37;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #666;
+  margin: 0;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #1a7f37;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: .9;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+  .container{
+    padding:15px;
+  }
+
+  h1{
+    font-size:30px;
+  }
+
+  .hero2{
+    padding:25px;
+  }
+
+  .card-image{
+    height:200px;
+  }
+
+  .card-content h3{
+    font-size:24px;
+  }
+
+}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 60px;
+  padding: 25px 20px;
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #1a7f37;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #777;
 }

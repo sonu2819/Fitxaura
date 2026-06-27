@@ -19,10 +19,12 @@ export default function Navbar() {
       {open && (
         <div className="links">
           <a href="/">Home</a>
-          <a href="/symptoms">Symptoms</a>
-          <a href="/diseases">Diseases</a>
-          <a href="/nutrition">Nutrition</a>
-          <a href="/fitness">Fitness</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/faq">FAQ</a>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms & Conditions</a>
+          <a href="/disclaimer">Medical Disclaimer</a>
         </div>
       )}
     </nav>
