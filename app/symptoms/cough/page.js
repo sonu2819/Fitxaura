@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Cough Causes, Types & Remedies | Fitxaura",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Cough() {
   return (
     <>
-      <Navbar />
+      
 
       <div className="container">
         <h1>Cough</h1>

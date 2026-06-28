@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 export const metadata = {
   title: "Headache Causes, Symptoms & Natural Remedies | Fitxaura",
   description:
@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function HeadachePage() {
   return (<>
-    <Navbar/>
+  
     <div className="container">
       <h1>Headache (Sir Dard)</h1>
 

@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Asthma Symptoms & Prevention | Fitxaura",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Asthma() {
   return (
     <>
-      <Navbar />
+     
 
       <div className="container">
         <h1>Asthma</h1>

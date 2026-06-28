@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Link from "next/link";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 export default function Fitness() {
   return (
     <>
-      <Navbar />
+   
 
       <div className="container">
         <h1>Fitness Exercises at Home (Beginner Guide)</h1>
@@ -139,6 +139,7 @@ covering proper technique, benefits, common mistakes, and beginner tips.
   </li>
 </ul>
       </div>
+     
     </>
   );
 }

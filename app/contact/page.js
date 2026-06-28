@@ -10,7 +10,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
-      <Navbar />
+   
 
       <div className="container">
         <h1>Contact Us</h1>
@@ -52,7 +52,7 @@ export default function Contact() {
         </p>
       </div>
 
-      <Footer />
+      
     </>
   );
 }

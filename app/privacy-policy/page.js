@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -9,7 +7,7 @@ export const metadata = {
 export default function Privacy() {
   return (
     <>
-      <Navbar />
+     
 
       <div className="container">
         <h1>Privacy Policy</h1>
@@ -45,7 +43,7 @@ export default function Privacy() {
         <p>Email: merestro106@gmail.com</p>
       </div>
 
-      <Footer />
+      
     </>
   );
 }

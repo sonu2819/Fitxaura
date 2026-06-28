@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
 import Link from "next/link";
+
 
 export const metadata = {
   title: "Common Symptoms Guide | Causes, Signs & Management | Fitxaura",
@@ -10,7 +10,7 @@ export const metadata = {
 export default function Symptoms() {
   return (
     <>
-      <Navbar />
+     
 
       <div className="container">
         <h1>Common Symptoms Guide</h1>
@@ -148,6 +148,7 @@ export default function Symptoms() {
         </p>
 
       </div>
+     
     </>
   );
 }

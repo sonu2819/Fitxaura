@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 
 export const metadata = {
   title: "Diabetes Symptoms, Causes & Prevention | Fitxaura",
@@ -9,7 +8,7 @@ export const metadata = {
 export default function Diabetes() {
   return (
     <>
-      <Navbar />
+    
 
       <div className="container">
         <h1>Diabetes</h1>

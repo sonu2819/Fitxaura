@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Link from "next/link";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 export default function Nutrition() {
   return (
     <>
-      <Navbar />
+  
 
       <div className="container">
         <h1>Nutrition Guide (Essential Nutrients for Health)</h1>
@@ -149,6 +149,7 @@ export default function Nutrition() {
         </p>
 
       </div>
+      
     </>
   );
 }

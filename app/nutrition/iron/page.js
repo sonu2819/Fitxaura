@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Iron | Fitxaura",
@@ -8,7 +8,6 @@ export const metadata = {
 export default function Iron() {
   return (
     <>
-      <Navbar />
 
       <div className="container">
         <h1>Iron</h1>

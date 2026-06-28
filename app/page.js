@@ -1,5 +1,3 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -12,7 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar />
+     
 
       <div className="container">
 
@@ -136,7 +134,6 @@ export default function Home() {
 
       </div>
 
-      <Footer />
     </>
   );
 }

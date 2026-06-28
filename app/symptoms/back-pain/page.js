@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Back Pain Causes, Symptoms & Relief | Fitxaura",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function BackPain() {
   return (
     <>
-      <Navbar />
+ 
 
       <div className="container">
         <h1>Back Pain</h1>

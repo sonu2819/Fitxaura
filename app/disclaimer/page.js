@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 export const metadata = {
   title: "Disclaimer",
@@ -9,7 +8,7 @@ export const metadata = {
 export default function Disclaimer() {
   return (
     <>
-      <Navbar />
+    
 
       <div className="container">
         <h1>Disclaimer</h1>
@@ -75,7 +74,7 @@ export default function Disclaimer() {
         </p>
       </div>
 
-      <Footer />
+      
     </>
   );
 }

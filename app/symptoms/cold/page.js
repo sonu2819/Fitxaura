@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Cold Symptoms, Causes & Remedies | Fitxaura",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Cold() {
   return (
     <>
-      <Navbar />
+      
 
       <div className="container">
         <h1>Cold</h1>

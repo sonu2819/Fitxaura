@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Protein | Fitxaura",
@@ -8,8 +8,7 @@ export const metadata = {
 export default function Protein() {
   return (
     <>
-      <Navbar />
-
+     
       <div className="container">
         <h1>Protein</h1>
 

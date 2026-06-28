@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 
 export const metadata = {
   title: "FAQ",
@@ -9,7 +7,7 @@ export const metadata = {
 export default function FAQ() {
   return (
     <>
-      <Navbar />
+     
 
       <div className="container">
         <h1>Frequently Asked Questions</h1>
@@ -44,7 +42,7 @@ export default function FAQ() {
         </p>
       </div>
 
-      <Footer />
+  
     </>
   );
 }

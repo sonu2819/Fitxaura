@@ -1,4 +1,3 @@
-import Navbar from "../../components/Navbar";
 
 export const metadata = {
   title: "High Blood Pressure | Fitxaura",
@@ -9,7 +8,7 @@ export const metadata = {
 export default function BloodPressure() {
   return (
     <>
-      <Navbar />
+      
 
       <div className="container">
         <h1>High Blood Pressure</h1>

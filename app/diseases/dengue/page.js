@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Dengue Symptoms, Causes & Prevention | Fitxaura",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function Dengue() {
   return (
     <>
-      <Navbar />
+  
 
       <div className="container">
         <h1>Dengue</h1>

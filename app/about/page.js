@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 export const metadata = {
   title: "About",
@@ -9,7 +8,7 @@ export const metadata = {
 export default function About() {
   return (
     <>
-      <Navbar />
+      
 
       <div className="container">
         <h1>About Fitxaura</h1>
@@ -43,7 +42,6 @@ export default function About() {
         </p>
       </div>
 
-      <Footer />
     </>
   );
 }

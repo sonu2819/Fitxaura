@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+
 import Link from "next/link";
 
 export const metadata = {
@@ -10,8 +10,7 @@ export const metadata = {
 export default function Diseases() {
   return (
     <>
-      <Navbar />
-
+      
       <div className="container">
         <h1>Common Diseases Guide</h1>
 
@@ -164,6 +163,7 @@ export default function Diseases() {
           risk of complications and improving recovery.
         </p>
       </div>
+     
     </>
   );
 }
