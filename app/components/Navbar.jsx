@@ -6,39 +6,49 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
   const pathname = usePathname();
 
-  const closeMenu = () => setOpen(false);
-
-  // Auto close when route changes
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 15);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
-      <Link href="/" className="logo" onClick={closeMenu}>
-        <h2>Fitxaura</h2>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <Link href="/" className="logo">
+        
+        <span className="logo-text">Fitxaura</span>
       </Link>
 
       <button
-        className="hamburger"
+        className={`hamburger ${open ? "active" : ""}`}
         onClick={() => setOpen(!open)}
-        aria-label="Toggle menu"
+        aria-label="Toggle Menu"
       >
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      {open && (
-        <div className="links">
-          <Link href="/" onClick={closeMenu}>Home</Link>
-          <Link href="/about" onClick={closeMenu}>About</Link>
-          <Link href="/contact" onClick={closeMenu}>Contact</Link>
-          <Link href="/faq" onClick={closeMenu}>FAQ</Link>
-          <Link href="/privacy-policy" onClick={closeMenu}>Privacy Policy</Link>
-          <Link href="/disclaimer" onClick={closeMenu}>Medical Disclaimer</Link>
-        </div>
-      )}
+      <div className={`links ${open ? "show" : ""}`}>
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/faq">FAQ</Link>
+        <Link href="/privacy-policy">Privacy Policy</Link>
+        <Link href="/disclaimer">Disclaimer</Link>
+      </div>
     </nav>
   );
 }

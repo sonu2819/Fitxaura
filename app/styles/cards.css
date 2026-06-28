@@ -1,0 +1,171 @@
+/* ==========================================
+   HOME CARDS
+========================================== */
+
+.home-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  text-decoration: none;
+  color: inherit;
+
+  box-shadow: var(--shadow-md);
+
+  transition: all .35s ease;
+
+  position: relative;
+}
+
+/* Top Accent */
+
+.home-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+
+  background: var(--gradient-primary);
+
+}
+
+/* Hover */
+
+.home-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-lg);
+
+  border-color: rgba(37,99,235,.2);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.card-image {
+
+  width: 100%;
+  height: 360px;
+
+  object-fit: contain;
+
+  background: #ffffff;
+
+  padding: 20px;
+
+  transition: transform .5s ease;
+
+}
+
+.home-card:hover .card-image {
+
+  transform: scale(1.02);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.card-content {
+
+  padding: 30px;
+
+}
+
+.card-content h3 {
+
+  font-size: 30px;
+
+  margin-bottom: 12px;
+
+  color: var(--text);
+
+  font-weight: 700;
+
+}
+
+.card-content p {
+
+  color: var(--text-light);
+
+  line-height: 1.8;
+
+  font-size: 17px;
+
+}
+
+/* Learn More */
+
+.card-content::after {
+
+  content: "Learn More →";
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: var(--secondary);
+
+  font-weight: 700;
+
+  transition: .3s;
+
+}
+
+.home-card:hover .card-content::after {
+
+  transform: translateX(8px);
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+  .home-grid{
+    gap:25px;
+  }
+
+  .card-image{
+    height:240px;
+    padding:15px;
+  }
+
+  .card-content{
+    padding:22px;
+  }
+
+  .card-content h3{
+    font-size:24px;
+  }
+
+  .card-content p{
+    font-size:15px;
+  }
+
+}

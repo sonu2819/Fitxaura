@@ -1,0 +1,109 @@
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+/* ---------- Tablets ---------- */
+
+@media (max-width:992px){
+
+  .container{
+    max-width:95%;
+  }
+
+  .hero{
+    padding:60px 35px;
+  }
+
+  .card-image{
+    height:280px;
+  }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+  .container{
+    padding:18px;
+  }
+
+  .home-grid{
+    gap:22px;
+  }
+
+  .home-card{
+    border-radius:18px;
+  }
+
+  .card-content{
+    padding:20px;
+  }
+
+  .card-content h3{
+    font-size:24px;
+  }
+
+  .card-content p{
+    font-size:15px;
+  }
+
+  .hero{
+    padding:45px 20px;
+  }
+
+  .hero h1{
+    font-size:2.4rem;
+  }
+
+  .hero p{
+    font-size:1rem;
+  }
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+  h1{
+    font-size:2rem;
+  }
+
+  h2{
+    font-size:1.6rem;
+  }
+
+  h3{
+    font-size:1.25rem;
+  }
+
+  .hero{
+    padding:40px 20px;
+  }
+
+  .hero p{
+    font-size:.95rem;
+  }
+
+  .card-image{
+    height:200px;
+  }
+
+  .card-content{
+    padding:18px;
+  }
+
+  .card-content h3{
+    font-size:22px;
+  }
+
+  .navbar{
+    padding:0 15px;
+  }
+
+  .logo-text{
+    font-size:22px;
+  }
+
+}

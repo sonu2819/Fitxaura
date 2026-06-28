@@ -1,0 +1,120 @@
+/* ==========================================
+   LISTS
+========================================== */
+
+ul {
+  list-style: none;
+  margin: 25px 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 18px 22px;
+  margin-bottom: 16px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition);
+
+  overflow: hidden;
+}
+
+/* Left Accent */
+
+li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 5px;
+  height: 100%;
+
+  background: var(--gradient-primary);
+}
+
+/* Check Icon */
+
+li::after {
+  content: "✓";
+
+  margin-left: auto;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(34,197,94,.12);
+
+  color: var(--primary);
+
+  font-weight: bold;
+
+  border-radius: 50%;
+}
+
+/* Hover */
+
+li:hover {
+  transform: translateX(8px);
+
+  box-shadow: var(--shadow-md);
+
+  border-color: rgba(59,130,246,.18);
+}
+
+/* Links inside lists */
+
+li a {
+  flex: 1;
+
+  color: var(--text);
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+li:hover a {
+  color: var(--secondary);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+li{
+
+padding:16px 18px;
+
+}
+
+li::after{
+
+width:28px;
+height:28px;
+
+font-size:14px;
+
+}
+
+}

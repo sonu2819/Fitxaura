@@ -1,0 +1,70 @@
+/* ==========================================
+   FITXAURA DESIGN SYSTEM
+========================================== */
+
+:root {
+
+  /* Brand */
+  --primary: #16a34a;
+  --primary-dark: #15803d;
+  --primary-light: #dcfce7;
+
+  --secondary: #2563eb;
+  --secondary-dark: #1d4ed8;
+  --secondary-light: #dbeafe;
+
+  --accent: #06b6d4;
+
+  /* Background */
+
+  --background: #f5f7fb;
+  --surface: #ffffff;
+  --surface-light: #f8fafc;
+
+  /* Text */
+
+  --text: #0f172a;
+  --text-light: #64748b;
+  --text-muted: #94a3b8;
+
+  /* Border */
+
+  --border: #e2e8f0;
+
+  /* Radius */
+
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 30px;
+
+  /* Shadows */
+
+  --shadow-sm:
+      0 2px 8px rgba(15,23,42,.05);
+
+  --shadow-md:
+      0 10px 30px rgba(15,23,42,.08);
+
+  --shadow-lg:
+      0 20px 50px rgba(15,23,42,.12);
+
+  /* Gradient */
+
+  --gradient-primary:
+      linear-gradient(
+      135deg,
+      #16a34a,
+      #22c55e,
+      #2563eb);
+
+  --gradient-hero:
+      linear-gradient(
+      135deg,
+      #eefbf3,
+      #eef6ff);
+
+  /* Animation */
+
+  --transition: .35s ease;
+
+}

@@ -9,35 +9,36 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
-     
+    <div className="container">
 
-      <div className="container">
+      {/* HERO */}
+      <section className="hero">
 
-        {/* HERO SEO IMPROVED */}
-        <div className="hero">
-          <h1>Fitxaura – Simple Health, Fitness & Nutrition Guide</h1>
+        <span className="hero-badge">
+          Trusted Health Information
+        </span>
 
-          <p>
-            Fitxaura is a free health knowledge platform where you can learn about
-            symptoms, diseases, nutrition, and fitness in a simple and easy way.
-            Our goal is to make medical and health information easy for everyone
-            to understand.
-          </p>
-        </div>
+        <h1>
+          Your Simple Guide to Better Health
+        </h1>
 
-        {/* INTRO SEO TEXT */}
-        <div className="intro">
-          <h2>Learn About Health in Simple Language</h2>
+        <p>
+          Explore beginner-friendly guides on symptoms, diseases, nutrition,
+          and fitness. Fitxaura makes health information easy to understand,
+          helping you make informed choices for a healthier lifestyle.
+        </p>
 
-          <p>
-            Whether you want to understand common diseases, improve your fitness,
-            learn about nutrition, or identify symptoms, Fitxaura provides clear
-            and beginner-friendly guides.
-          </p>
-        </div>
+       
 
-        <h2 className="section-title">Explore Health Topics</h2>
+      </section>
+
+      {/* HEALTH TOPICS */}
+
+      <section>
+
+        <h2 id="explore" className="section-title">
+          Explore Health Topics
+        </h2>
 
         <div className="home-grid">
 
@@ -52,9 +53,11 @@ export default function Home() {
 
             <div className="card-content">
               <h3>Symptoms Guide</h3>
+
               <p>
-                Learn about common symptoms like fever, cough, headache and
-                their causes and remedies.
+                Learn about common symptoms like fever, cough, headache,
+                fatigue, and understand their possible causes and simple
+                remedies.
               </p>
             </div>
           </Link>
@@ -70,9 +73,10 @@ export default function Home() {
 
             <div className="card-content">
               <h3>Diseases Guide</h3>
+
               <p>
-                Understand common diseases like diabetes, asthma and high blood
-                pressure with prevention tips.
+                Discover common diseases including diabetes, asthma, dengue,
+                and high blood pressure with prevention and awareness tips.
               </p>
             </div>
           </Link>
@@ -88,9 +92,10 @@ export default function Home() {
 
             <div className="card-content">
               <h3>Nutrition Guide</h3>
+
               <p>
-                Learn about protein, vitamins, iron and calcium for better
-                health and energy.
+                Learn about proteins, vitamins, calcium, iron, and healthy
+                eating habits to support your overall well-being.
               </p>
             </div>
           </Link>
@@ -106,34 +111,40 @@ export default function Home() {
 
             <div className="card-content">
               <h3>Fitness Guide</h3>
+
               <p>
-                Simple home workouts like push-ups, squats, and running to
-                build strength and stamina.
+                Improve your fitness with simple workouts like push-ups,
+                squats, running, and other beginner-friendly exercises.
               </p>
             </div>
           </Link>
 
         </div>
 
-        {/* SEO TEXT BLOCK */}
-        <div className="seo-section">
-          <h2>Why Use Fitxaura?</h2>
+      </section>
 
-          <ul>
-            <li>Simple and easy health explanations</li>
-            <li>Beginner-friendly fitness and nutrition guides</li>
-            <li>Free health information in one place</li>
-            <li>Structured topics for quick learning</li>
-          </ul>
+      {/* WHY FITXAURA */}
 
-          <p>
-            Fitxaura helps you understand health topics in simple language so
-            you can take better care of your body and lifestyle.
-          </p>
-        </div>
+      <section className="seo-section">
 
-      </div>
+        <h2>Why Choose Fitxaura?</h2>
 
-    </>
+        <p>
+          Fitxaura is designed to provide clear, reliable, and beginner-friendly
+          health information. Whether you're learning about symptoms, diseases,
+          nutrition, or fitness, our goal is to make health knowledge simple,
+          practical, and accessible for everyone.
+        </p>
+
+        <ul>
+          <li>✔ Easy-to-understand health guides</li>
+          <li>✔ Beginner-friendly fitness and nutrition tips</li>
+          <li>✔ Reliable educational health content</li>
+          <li>✔ Completely free to access</li>
+        </ul>
+
+      </section>
+
+    </div>
   );
 }

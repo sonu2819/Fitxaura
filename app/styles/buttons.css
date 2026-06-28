@@ -1,0 +1,119 @@
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: var(--gradient-primary);
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+
+  box-shadow: var(--shadow-md);
+}
+
+.btn:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: var(--shadow-lg);
+
+}
+
+.btn:active{
+
+  transform:scale(.98);
+
+}
+
+/* ==========================================
+   OUTLINE BUTTON
+========================================== */
+
+.btn-secondary{
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:14px 28px;
+
+  border-radius:14px;
+
+  background:white;
+
+  color:var(--secondary);
+
+  border:2px solid var(--secondary);
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+  background:var(--secondary);
+
+  color:white;
+
+  transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   SMALL BUTTON
+========================================== */
+
+.btn-sm{
+
+  padding:10px 18px;
+
+  font-size:14px;
+
+}
+
+/* ==========================================
+   FULL WIDTH
+========================================== */
+
+.btn-block{
+
+  width:100%;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.btn,
+.btn-secondary{
+
+width:100%;
+
+padding:15px 20px;
+
+}
+
+}
