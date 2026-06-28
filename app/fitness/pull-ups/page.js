@@ -1,4 +1,4 @@
-import Navbar from "../../components/Navbar";
+
 
 export const metadata = {
   title: "Pull-ups | Fitxaura",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function PullUps() {
   return (
     <>
-      <Navbar />
+      
 
       <div className="container">
         <h1>Pull-ups</h1>
