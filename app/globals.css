@@ -387,3 +387,22 @@ h3 {
   margin: 8px 0;
   display: list-item;
 }
+
+
+
+
+
+.hero {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container p {
+  text-align: left;
+}
